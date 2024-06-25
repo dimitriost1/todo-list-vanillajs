@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list | Vanilla Js</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form>
+      <input id="todo-input" type="text" placeholder="enter a new todo" />
+      <button>Add Todo</button>
+    </form>
+    <div id="app">
+      <ol id="list"></ol>
+    </div>
+
+    <template id="list-item-template">
+      <li>
+        <span class="title">Item: </span>
+        <span class="content"></span>
+      </li>
+    </template>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
